@@ -1,8 +1,9 @@
 *{
-    margin: 0;
+    margin: auto 0;
     padding: 0;
     box-sizing: border-box;
     max-width:1366px;
+  
     
 }
 body{
@@ -601,9 +602,9 @@ header{
     margin-left: 26px;
 }
 .info-precios{
-    margin-top: -565px;
+    margin:auto 5px;
     position: relative;
-    margin-left: 21px;
+   
 }
 .square p{
     display: flex;
@@ -704,10 +705,111 @@ input[type="submit"]:hover {
     height: 100%;
 }
 
+@media (max-width: 320px) {
+   
+    .button-reservar {
+        display: flex;
+        flex-direction: column;
+        background: #be0434;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+    #check:checked ~ ul {
+        max-width:320px ;
+    }
+    .button-conocermas{
+        top: 515px;
+        left: 113px;
+        width: 118px;
+        font-size: 15px;
+    }
+    .lugares{
+        gap:136px;
+    }
+    #map{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        flex-direction: column;
+    }
+   .grupo-2 iframe{
+    width: 274px;
+   }
+   .form-busqueda{
+    margin: 5vh;
+   }
+   .oferta-hoteles{
+    margin-left: 10px;
+   }
+   .square{
+    margin-left: 1vh;
+   }
+   .nuevo-precio h5{
+    margin-left: 113px;
+   }
+
+   .cards-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .cards-container p{
+        font-size: 10px;
+    }
+    .cards-container
+    .card-1 {
+        width: 12rem;
+        height: 36rem;
+        
+    }
+    .servicios h1{
+        color: #be0434;
+        font-size: larger;
+    }
+    .servicios-1 p {
+        font-size: 12px;
+        text-align: justify;
+        align-content: center;
+        display: block;
+        width: 236px;
+
+    }
+    
+    .info-precios {
+        margin: auto 5px;
+        position: relative;
+    }
+    .servicios-2 p{
+    font-size: 12px;
+    text-align: justify;
+    }
+    .servicios-3 p{
+    text-align: justify;
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
+    padding: 2px;
+    }
+    .cards-container .card-1 p {
+    font-size: 10px;
+    padding-top: 90px;
+    }
+    .cards-container .card-1 h2 {
+    font-size: 30px;
+
+    }
+    .gif{
+        padding: 10px;
+    }
+}
 @media (max-width: 480px) {
-    .body p{
+    
+    body p{
         font-size: 16px;
-        overflow-x: hidden;
+        margin: auto;
     }
     .intro p {
         display: flex;
@@ -722,12 +824,13 @@ input[type="submit"]:hover {
         color: white;
         font-family: 'Bebas Neue', sans-serif;
         font-size: 20px;
-        top: 564px;
-        left: 206px;
+        top: 604px;
+        left: 149px;
         width: 118px;
         border-radius: 16.5px;
         padding: 8px;
     }
+    
     .checkboton{
         display: block;
     }
@@ -742,17 +845,18 @@ input[type="submit"]:hover {
         transition: all 0.5s;
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
-        margin: 50px;
+        margin: 99px;
         line-height: 30px;
+        margin-left: auto;
     }
     nav ul li a{
         font-size: 40px;
 
     }
     li a:hover{
-        background-color: blueviolet;
+        background-color: rgb(223, 169, 223);
     }
     #check:checked ~ ul {
         max-width:480px ;
@@ -801,12 +905,12 @@ input[type="submit"]:hover {
     }
     .square{
         width: 290px;
-        margin-top: 22px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        margin-left: 2vh;
+        margin: auto 50px 10px;
+    
     }
     .nuevo-precio h5{
         margin-left: 112px;
@@ -814,7 +918,7 @@ input[type="submit"]:hover {
     .form-busqueda {
         flex-wrap: wrap;
         width: 297px;
-        margin-left: 2vh;
+        margin: auto 50px 10px;
     }
     .form-busqueda button {
         margin: 20px;
@@ -868,7 +972,7 @@ input[type="submit"]:hover {
     font-size: 20px;
     width: 101px;
     height: 60px;
-  }
+    }
 
 
     h5.nuevo-precio{
@@ -884,11 +988,11 @@ input[type="submit"]:hover {
 
 
     .hero {
-        width: 100%;
+        width: fit-content;
         display: flex;
         align-items: center;
-        justify-self: center;
         flex-direction: column;
+        margin: auto 68px;
     }
     .servicios h1 {
         color: #be0434;
@@ -1010,99 +1114,3 @@ input[type="submit"]:hover {
 }
 
 
-
-@media (max-width: 320px) {
-    *{
-        max-width: 320px; ;
-    }
- 
-    
-    .button-conocermas{
-        top: 515px;
-        left: 113px;
-        width: 118px;
-        font-size: 15px;
-    }
-    .lugares{
-        gap:136px;
-    }
-    #map{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-self: center;
-        flex-direction: column;
-    }
-   .grupo-2 iframe{
-    width: 274px;
-   }
-   .form-busqueda{
-    margin: 5vh;
-   }
-   .oferta-hoteles{
-    margin-left: 10px;
-   }
-   .square{
-    margin-left: 1vh;
-   }
-   .nuevo-precio h5{
-    margin-left: 113px;
-   }
-
-   .cards-container{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-    .cards-container p{
-        font-size: 10px;
-    }
-    .cards-container
-    .card-1 {
-        width: 12rem;
-        height: 36rem;
-        
-    }
-    .servicios h1{
-        color: #be0434;
-        font-size: larger;
-    }
-    .servicios-1 p {
-        width: 100%;
-        font-size: 12px;
-        text-align: justify;
-        margin-left: 9px;
-        align-content: center;
-        display: block;
-        width: 300px;
-        padding: 0;
-    }
-    
-
-    .servicios-2 p{
-    font-size: 12px;
-    margin: 0;
-    text-align: justify;
-    padding: 2px 7px 0;
-    }
-    .servicios-3 p{
-    text-align: justify;
-    display: inline-block;
-    margin: 0;
-    
-    font-size: 12px;
-    padding: 2px;
-    }
-    .cards-container .card-1 p {
-    font-size: 10px;
-    padding-top: 90px;
-    }
-    .cards-container .card-1 h2 {
-    font-size: 30px;
-
-    }
-    .gif{
-        padding: 10px;
-    }
-}
-  
